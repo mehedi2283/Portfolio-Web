@@ -4,6 +4,9 @@ import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
+import { ImBook } from "react-icons/im";
+import { ImMobile } from "react-icons/im";
+import { ImAirplane } from "react-icons/im";
 
 import "./Navbar.css";
 
@@ -100,7 +103,7 @@ const DetailsNavbar = () => {
                         // }
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10 "
                     >
-                        <FaUser className="mr-1"></FaUser>
+                        <ImBook className="mr-1"></ImBook>
                         Awesome Course
                     </Link>
 
@@ -114,7 +117,7 @@ const DetailsNavbar = () => {
                         // }
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10 "
                     >
-                        <FaUser className="mr-1"></FaUser>
+                        <ImMobile className="mr-1"></ImMobile>
                         SellPhone
                     </Link>
 
@@ -128,7 +131,7 @@ const DetailsNavbar = () => {
                         offset={-105}
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10"
                     >
-                        <GiSkills className="mr-1"></GiSkills>
+                        <ImAirplane className="mr-1"></ImAirplane>
                         toutDe
                     </Link>
                 </div>
