@@ -1,0 +1,17 @@
+.Link{
+    padding: 15px;
+    font-weight: bold;
+   
+   
+    
+
+}
+.Link:hover{
+    color:#be123c;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    text-decoration-thickness: 3px;
+    animation-duration: 0.5s;
+    
+
+}
