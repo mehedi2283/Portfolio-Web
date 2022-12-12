@@ -77,7 +77,7 @@ const Projects = () => {
                     <div className="card-body bg-accent/20 backdrop-blur-sm rounded-b-sm">
                         <section className="flex items-baseline justify-between">
                             <h2 className="card-title text-2xl">
-                                Awesome Course
+                                SellPhone
                             </h2>
                             <h2 className="text-accent">E-commerse</h2>
                         </section>
