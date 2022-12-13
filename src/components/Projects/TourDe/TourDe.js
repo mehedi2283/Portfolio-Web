@@ -71,7 +71,7 @@ const TourDe = () => {
                                     pathname:
                                         "//github.com/mehedi2283/tour_de-server",
                                 }}
-                                className="text-primary font-bold normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
+                                className="text-primary font-bold  normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
                                 target="_blank"
                                 rel="noreferrer"
                             >
