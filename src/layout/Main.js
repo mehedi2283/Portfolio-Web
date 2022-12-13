@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { MdDepartureBoard } from "react-icons/md";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "./../components/Footer/Footer";
@@ -20,7 +19,7 @@ const Main = () => {
     return (
         <>
             
-            <div className=" page-container">
+            <div className=" page-container ">
                 <div  className="z-50 duration-300  sticky top-1">
                     <Navbar></Navbar>
                 </div>

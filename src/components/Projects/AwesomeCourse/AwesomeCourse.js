@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const AwesomeCourse = () => {
     return (
-        <section>
+        <section className="cursor-default">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
                     <div
@@ -48,7 +48,8 @@ const AwesomeCourse = () => {
                         <div className="my-3 flex flex-wrap items-center gap-5">
                             <Link
                                 to={{
-                                    pathname: "///awesome-course-8893a.web.app/",
+                                    pathname:
+                                        "///awesome-course-8893a.web.app/",
                                 }}
                                 className="text-primary font-bold normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
                                 target="_blank"
@@ -85,6 +86,10 @@ const AwesomeCourse = () => {
                         <ul className="text-white my-3 flex flex-col gap-3">
                             <li className="flex items-center">
                                 <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <span>Single pase web app.</span>
+                            </li>
+                            <li className="flex items-center">
+                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
                                 <span>Firebase Login System.</span>
                             </li>
                             <li className="flex items-center">
@@ -104,19 +109,18 @@ const AwesomeCourse = () => {
                             🚀 Technology
                         </h2>
                         <div className="flex items-center flex-wrap gap-3 my-3">
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 React.js
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 React Router Dom
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
-                                Tailwind CSS
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                                Bootstrap CSS
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Firebase
-                            </button>
-                            
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -27,14 +27,19 @@ const GoToTop = () => {
     }, []);
 
     return (
-        <div className="goto-top ">
+        <div className="goto-top transition-all duration-300">
             {isVisible && (
                 <>
-                    {/* <div
-                        className="top-btn hover:bg-accent duration-300 hover:text-primary font-bold"
-                        
-                    ></div> */}
-                    <IoIosArrowUp className="top-btn-icon animate-bounce top-btn"  onClick={goToBtn}/>
+                    {" "}
+                    <div className="top-btn peer">
+                        <div className="top-btn hover:bg-accent hover:backdrop-blur-sm hover:text-primary font-bold ">
+                            <IoIosArrowUp
+                                className="top-btn-icon text-4xl"
+                                onClick={goToBtn}
+                            />
+                        </div>
+                    </div>
+                    <span className="top-btn2 rounded-full peer-hover:text-primary peer-hover:animate-ping  block"></span>
                 </>
             )}
         </div>

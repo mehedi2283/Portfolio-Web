@@ -6,67 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactMe = () => {
-    const [bgPrimary1, setBgPrimary1] = useState(false);
-    const [bgPrimary2, setBgPrimary2] = useState(false);
-    const [bgPrimary3, setBgPrimary3] = useState(false);
-    const [bgPrimary4, setBgPrimary4] = useState(false);
-    const [bgPrimary5, setBgPrimary5] = useState(false);
-    const [bgPrimary6, setBgPrimary6] = useState(false);
-
-
-    const handleNameLabel = () => {
-        setBgPrimary1(!bgPrimary1);
-    };
-    const handleNameLabelFalse = () => {
-        setBgPrimary1(false);
-    };
-
-
-    const handleEmailLabel = () => {
-        setBgPrimary2(!bgPrimary1);
-    };
-    const handleEmailLabelFalse = () => {
-        setBgPrimary2(false);
-    };
-
-
-    const handleMgsLabel = () => {
-        setBgPrimary3(!bgPrimary3);
-    };
-    const handleMgsLabelFalse = () => {
-        setBgPrimary3(false);
-    };
-
-
-
-
-
-
-
-
-
-
-
-
-    const handleNameLabelHover = () => {
-        setBgPrimary4(!bgPrimary4);
-    };
-    const handleNameLabelFalseHover = () => {
-        setBgPrimary4(false);
-    };
-    const handleEmailLabelHover = () => {
-        setBgPrimary5(!bgPrimary5);
-    };
-    const handleEmailLabelFalseHover = () => {
-        setBgPrimary5(false);
-    };
-    const handleMgsLabelHover = () => {
-        setBgPrimary6(!bgPrimary6);
-    };
-    const handleMgsLabelFalseHover = () => {
-        setBgPrimary6(false);
-    };
-
+   
 
 
 
@@ -109,7 +49,7 @@ const ContactMe = () => {
     return (
         <div id="contacts" className="mt-20">
             <h1
-                className="text-4xl text-center font-bold divider  uppercase "
+                className="text-4xl text-center font-bold divider  uppercase cursor-default"
                 data-aos="fade-down"
             >
                 <span className=" -translate-y-4 ">Contact</span>{" "}
@@ -122,67 +62,55 @@ const ContactMe = () => {
                 onSubmit={sendEmail}
                 className="flex flex-col w-1/2 mx-auto"
             >
-                <div className="flex flex-col" data-aos="fade-down">
-                    <label
-                        className={`mt-4 text-lg translate-y-4 bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold ${
-                            bgPrimary1 || bgPrimary4 === true
-                                ? "bg-primary/50 duration-200 text-slate-300 shadow-primary/70 shadow-lg"
-                                : " duration-200"
-                        }`}
-                    >
-                        Name
-                    </label>
+                <div className="flex flex-col relative mt-9" data-aos="fade-down">
+                    
                     <input
-                        onFocus={handleNameLabel}
-                        onBlur={handleNameLabelFalse}
-                        onMouseEnter={handleNameLabelHover}
-                        onMouseLeave={handleNameLabelFalseHover}
+                       
                         type="text"
                         name="from_name"
                         required
-                        className="input bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 p-5 h-14"
+                        autocomplete="off"
+                        className="input  peer bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 h-14"
                     />
-                </div>
-                <div className="flex flex-col" data-aos="fade-down">
                     <label
-                        className={`mt-4 text-lg translate-y-4 bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold ${
-                            bgPrimary2 || bgPrimary5 === true
-                                ? "bg-primary/50 duration-200 text-slate-300 shadow-primary/70 shadow-lg"
-                                : " duration-200"
-                        }`}
+                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50
+                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12    transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold `}
                     >
-                        Email
+                        Name
                     </label>
+                </div>
+                <div className="flex flex-col relative mt-9" data-aos="fade-down">
+                    
                     <input
-                        onFocus={handleEmailLabel}
-                        onBlur={handleEmailLabelFalse}
-                        onMouseEnter={handleEmailLabelHover}
-                        onMouseLeave={handleEmailLabelFalseHover}
+                       
                         type="email"
                         name="from_email"
                         required
-                        className="input bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 p-5 h-14"
+                        autocomplete="off"
+                        className="input peer bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 p-5 h-14"
                     />
-                </div>
-                <div className="flex flex-col" data-aos="fade-down">
                     <label
-                        className={`mt-4 text-lg translate-y-4 bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold ${
-                            bgPrimary3 || bgPrimary6 === true
-                                ? "bg-primary/50 duration-200 text-slate-300 shadow-primary/70 shadow-lg"
-                                : " duration-200"
-                        }`}
+                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50 
+                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12 transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold `}
+                    >
+                        Email
+                    </label>
+                </div>
+                <div className="flex flex-col relative mt-9 transition-all duration-200" data-aos="fade-down">
+                    
+                    <textarea
+                       
+                        name="message"
+                        required
+                        autocomplete="off"
+                        className="textarea peer bg-accent/20 backdrop-blur-sm h-52 mt-1 border border-primary/30 p-5 text-primary focus:outline-none focus:border-primary/70"
+                    />
+                    <label
+                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50 
+                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12    transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold duration-200`}
                     >
                         Message
                     </label>
-                    <textarea
-                        onFocus={handleMgsLabel}
-                        onBlur={handleMgsLabelFalse}
-                        onMouseEnter={handleMgsLabelHover}
-                        onMouseLeave={handleMgsLabelFalseHover}
-                        name="message"
-                        required
-                        className="textarea bg-accent/20 backdrop-blur-sm h-52 mt-1 border border-primary/30 p-5 text-primary focus:outline-none focus:border-primary/70"
-                    />
                 </div>
                 <input
                     data-aos="fade-down"

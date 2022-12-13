@@ -17,7 +17,7 @@
     width: 4rem;
     height: 4rem;
     color: #fff;
-    background-color: #be123dba;
+    background-color: #37415129;
     border-radius: 50%;
     position: fixed;
     bottom: 2rem;
@@ -29,25 +29,49 @@
     cursor: pointer;
     transition-duration: 0.2s;
 }
+.top-btn2 {
+    border: 3px;
+    border-style:hidden;
+    width:  70px;
+    height: 70px;
+    color: #374151;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.8rem;
+    right: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:default;
+    transition-duration: 0.2s;
+}
+.top-btn2 {
+    
+    border-style:dashed;
+    animation: spin 5s linear infinite;
+    
+}
 
 .top-btn:hover {
     
     color: #be123c;
     background-color: #374151;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     
 }
 
-/* .top-btn-icon {
-    animation: gototop 1.2s linear infinite alternate-reverse;
-    @keyframes gototop {
-        0% {
-            transform: translateY(-0.5rem);
-            transform: scale(2);
+.top-btn-icon {
+    
+    animation: gototop 0.8s linear infinite alternate-reverse;
+    
+}
+@keyframes gototop {
+    0% {
+        transform: translateY(-0.5rem);
+        /* transform: scale(1.2); */
 
-        }
-        100% {
-            transform: translateY(1rem);
-        }
     }
-} */
+    100% {
+        transform: translateY(0.2rem);
+    }
+}

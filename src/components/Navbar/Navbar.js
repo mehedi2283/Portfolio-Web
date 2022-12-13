@@ -7,6 +7,7 @@ import { GoProject } from "react-icons/go";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaBloggerB } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { NavHashLink } from "react-router-hash-link";
 
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
@@ -74,22 +75,22 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <Link
-                    to="home"
+                <NavHashLink
+                    to="/#home"
                     smooth
                     className="btn btn-ghost normal-case text-xl hover:bg-accent/0 hover:scale-125"
                 >
                     <img className="w-10 " src={logo} alt="" />
-                </Link>
+                </NavHashLink>
             </div>
             <div className=" hidden lg:flex w-4/5">
                 <div className="menu menu-horizontal px-1 justify-around flex w-full ">
-                    <Link
+                    <NavHashLink
                         activeClass="active"
                         smooth={true}
-                        duration={500}
-                        offset={50}
-                        to="home"
+                        to="/#home"
+                        activeClassName="selected"
+                        activeStyle={{ color: "red" }}
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
@@ -97,12 +98,15 @@ const Navbar = () => {
                     >
                         <FaHome className="mr-1"></FaHome>
                         Home
-                    </Link>
-                    <Link
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-50}
+                    </NavHashLink>
+                    <NavHashLink
+                        to="/#about"
+                        scroll={(el) =>
+                            el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            })
+                        }
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
@@ -110,61 +114,77 @@ const Navbar = () => {
                     >
                         <FaUser className="mr-1"></FaUser>
                         About
-                    </Link>
-                    <Link
+                    </NavHashLink>
+                    <NavHashLink
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
-                        smooth
-                        spy={true}
-                        offset={-105}
-                        to="skills"
+
+                        to="/#skills"
+                        scroll={(el) =>
+                            el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            })
+                        }
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10"
                     >
                         <GiSkills className="mr-1"></GiSkills>
                         Skills
-                    </Link>
-                    <Link
+                    </NavHashLink>
+                    <NavHashLink
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
-                        smooth
-                        spy={true}
-                        offset={-105}
-                        to="projects"
+
+                        scroll={(el) =>
+                            el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            })
+                        }
+                        to="/#projects"
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10"
                     >
                         <GoProject className="mr-1"></GoProject>
                         Projects
-                    </Link>
+                    </NavHashLink>
 
-                    <Link
+                    <NavHashLink
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
-                        smooth
-                        spy={true}
-                        offset={-105}
-                        to="blogs"
+                        to="/#blogs"
+                        scroll={(el) =>
+                            el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            })
+                        }
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10"
                     >
                         <FaBloggerB className="mr-1"></FaBloggerB>
                         Blogs
-                    </Link>
+                    </NavHashLink>
 
-                    <Link
+                    <NavHashLink
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
                         // }
-                        smooth
-                        spy={true}
-                        offset={-105}
-                        to="contacts"
                         className="Link flex items-center btn btn-outline border-none hover:bg-primary/10"
+                        to={"/#contacts"}
+                        // activeClassName="selected"
+                        activeStyle={{ fontWeight: "bold" }}
+                        scroll={(el) =>
+                            el.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            })
+                        }
                     >
-                        <MdPermContactCalendar className="mr-1"></MdPermContactCalendar>
+                        {/* <MdPermContactCalendar className="mr-1"></MdPermContactCalendar> */}
                         Contacts
-                    </Link>
+                    </NavHashLink>
                 </div>
             </div>
             <div className="">

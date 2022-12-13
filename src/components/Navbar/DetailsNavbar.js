@@ -20,7 +20,7 @@ import "./Navbar.css";
 
 const DetailsNavbar = () => {
     return (
-        <div className="navbar bg-accent/20 mt-6 rounded-sm backdrop-blur z-50 justify-between">
+        <div className="navbar bg-accent/20 mt-1 rounded-sm backdrop-blur z-50 justify-between">
             <div className=" ">
                 <div className="dropdown ">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -73,16 +73,16 @@ const DetailsNavbar = () => {
                         </li>
                     </ul>
                 </div>
-                <Link
+                {/* <Link
                     to="/home"
                     className="btn btn-ghost normal-case text-xl hover:bg-accent/0 hover:scale-125"
                 >
                     <img className="w-10 " src={logo} alt="" />
-                </Link>
+                </Link> */}
             </div>
-            <div className=" hidden lg:flex w-4/5">
+            <div className=" hidden lg:flex w-4/5 mx-auto">
                 <div className="menu menu-horizontal px-1 justify-around flex w-full ">
-                    <Link
+                    {/* <Link
                         to="/home"
                         // style={({ isActive }) =>
                         //     isActive ? activeStyle : undefined
@@ -91,7 +91,7 @@ const DetailsNavbar = () => {
                     >
                         <FaHome className="mr-1"></FaHome>
                         Home
-                    </Link>
+                    </Link> */}
 
                     <Link
                         to="/details/awesome-course-details"
@@ -136,7 +136,7 @@ const DetailsNavbar = () => {
                     </Link>
                 </div>
             </div>
-            <div className="">
+            {/* <div className="">
                 <NavLink
                     to={{
                         pathname:
@@ -147,7 +147,7 @@ const DetailsNavbar = () => {
                 >
                     Resume
                 </NavLink>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -9,10 +9,13 @@ import { Link } from "react-router-dom";
 
 const SellPhone = () => {
     return (
-        <section>
+        <section className="cursor-default">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
-                    <div className="lg:col-span-1 w-full" data-aos="fade-down-right" >
+                    <div
+                        className="lg:col-span-1 w-full"
+                        data-aos="fade-down-right"
+                    >
                         <Carousel autoPlay={true} infiniteLoop={true}>
                             <div>
                                 <img src={img1} alt=" " />
@@ -26,8 +29,11 @@ const SellPhone = () => {
                         </Carousel>
                     </div>
 
-                    <div className="lg:col-span-1 w-full" data-aos="fade-down-left">
-                        <div className="flex items-center justify-between">
+                    <div
+                        className="lg:col-span-1 w-full"
+                        data-aos="fade-down-left"
+                    >
+                        <div className="flex items-center justify-between cursor-default">
                             <h1 className="text-3xl font-bold text-primary/90">
                                 SellPhone
                             </h1>
@@ -35,7 +41,7 @@ const SellPhone = () => {
                                 (Nov 24 - Nov -28)/2022
                             </p>
                         </div>
-                        <p className="text-white my-3">
+                        <p className="text-white my-3 cursor-default">
                             SellPhone is an online resale store where you can
                             buy products from online and also can sell them.
                         </p>
@@ -73,10 +79,14 @@ const SellPhone = () => {
                                 Server GitHub
                             </Link>
                         </div>
-                        <h2 className="text-white font-bold  uppercase">
+                        <h2 className="text-white font-bold  uppercase cursor-default">
                             📑Features
                         </h2>
-                        <ul className="text-white my-3 flex flex-col gap-3">
+                        <ul className="text-white my-3 flex flex-col gap-3 cursor-default">
+                            <li className="flex items-center">
+                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <span>Single pase web app.</span>
+                            </li>
                             <li className="flex items-center">
                                 <TiTick className="text-primary text-2xl"></TiTick>{" "}
                                 <span>Admin Dashboard.</span>
@@ -94,37 +104,37 @@ const SellPhone = () => {
                                 <span>NodeJS authentication with JWT</span>
                             </li>
                         </ul>
-                        <h2 className="text-primary/90 font-bold  uppercase">
+                        <h2 className="text-primary/90 font-bold  uppercase cursor-default">
                             🚀 Technology
                         </h2>
-                        <div className="flex items-center flex-wrap gap-3 my-3">
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                        <div className="flex items-center flex-wrap gap-3 my-3 ">
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 React.js
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 React Router Dom
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Tailwind CSS
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Node.js
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Express.js
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Mongo DB
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 JSON Web Token
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 Firebase
-                            </button>
-                            <button className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            </p>
+                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
                                 React Hot Toast
-                            </button>
+                            </p>
                         </div>
                     </div>
                 </div>

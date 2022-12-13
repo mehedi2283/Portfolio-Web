@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <footer
                 data-aos="fade-down"
-                className="footer footer-center p-10 bg-accent/20 backdrop-blur-sm text-base-content rounded w-full"
+                className="footer cursor-default footer-center p-10 bg-accent/20 backdrop-blur-sm text-base-content rounded w-full"
             >
                 <div>
                     <div className="grid grid-flow-col gap-4">

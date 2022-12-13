@@ -2,7 +2,7 @@ import React from "react";
 
 const Blogs = () => {
     return (
-        <section id="blogs" className=" mt-20 mb-72">
+        <section id="blogs" className=" mt-20 mb-72 cursor-default">
             <h1 className="text-4xl text-center font-bold divider  uppercase mb-20 " data-aos="fade-down">
                 <span className=" -translate-y-4 ">my</span>{" "}
                 <span className="underline underline-offset-4 text-primary -translate-y-5">
