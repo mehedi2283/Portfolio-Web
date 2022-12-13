@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Hero from "./../Hero/Hero";

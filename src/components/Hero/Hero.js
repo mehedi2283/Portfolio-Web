@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa";
 import hero1 from "../../assets/sellphone/rsz_fireshot_capture_003_-_home_-_sellphone_-_localhost.png";
 import hero2 from "../../assets/tourDe/rsz_1fireshot_capture_004_-_home_-_tourde_-_tourde-1a814webapp.png";
 import hero3 from "../../assets/awsCrs/rsz_fireshot_capture_006_-_awesome_course_-_awesome-course-8893awebapp.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (

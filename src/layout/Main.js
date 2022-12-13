@@ -5,16 +5,6 @@ import Footer from "./../components/Footer/Footer";
 import "./main.css";
 
 const Main = () => {
-
-    const [loading,setLoading] = useState(false)
-
-    if(loading){
-        return (
-            <div className="">
-                <p>loading</p>
-            </div>
-        )
-    }
     
     return (
         <>

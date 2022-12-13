@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";

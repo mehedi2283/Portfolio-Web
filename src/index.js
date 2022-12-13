@@ -1,27 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Particle from "./assets/Particles/Particles";
 
-
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-    
     <React.StrictMode>
         <Particle></Particle>
-        
+
         <App />
-        {/* <div className="">
-            <Link smooth to="home" className="bottom-10 right-10 fixed btn btn-primary  text-slate-200 hover:bg-accent border-none hover:text-primary btn-circle h-20 w-20">
-                <IoIosArrowUp className="text-5xl font-bold"></IoIosArrowUp>
-            </Link>
-            
-        </div> */}
     </React.StrictMode>
 );
 
