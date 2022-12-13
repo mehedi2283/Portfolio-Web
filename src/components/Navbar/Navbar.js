@@ -4,7 +4,6 @@ import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { GoProject } from "react-icons/go";
-import { MdPermContactCalendar } from "react-icons/md";
 import { FaBloggerB } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { NavHashLink } from "react-router-hash-link";

@@ -1,9 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.png";
-import { FaHome } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ImBook } from "react-icons/im";
 import { ImMobile } from "react-icons/im";
 import { ImAirplane } from "react-icons/im";

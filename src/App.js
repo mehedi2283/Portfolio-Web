@@ -4,10 +4,7 @@ import Main from "./layout/Main";
 import Home from './components/Home/Home';
 import ScrollCarousel from "scroll-carousel";
 import DetailsLayout from './layout/DetailsLayout';
-// import ProjectDetails from './ProjectDetails/ProjectDetails';
 import SellPhone from "./components/Projects/SellPhone/SellPhone";
-import { useEffect } from "react";
-import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import TourDe from './components/Projects/TourDe/TourDe';
 import AwesomeCourse from './components/Projects/AwesomeCourse/AwesomeCourse';
