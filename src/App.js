@@ -1,19 +1,17 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layout/Main";
-import Home from './components/Home/Home';
-import ScrollCarousel from "scroll-carousel";
-import DetailsLayout from './layout/DetailsLayout';
+import Home from "./components/Home/Home";
+import DetailsLayout from "./layout/DetailsLayout";
 import SellPhone from "./components/Projects/SellPhone/SellPhone";
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-import TourDe from './components/Projects/TourDe/TourDe';
-import AwesomeCourse from './components/Projects/AwesomeCourse/AwesomeCourse';
-
-
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import TourDe from "./components/Projects/TourDe/TourDe";
+import AwesomeCourse from "./components/Projects/AwesomeCourse/AwesomeCourse";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-
-
+   
 
     // useEffect(() => {
     //     AOS.init()
@@ -28,11 +26,11 @@ function App() {
                 {
                     path: "/",
                     element: <Home></Home>,
-                }, 
+                },
                 // {
                 //     path: "/home",
                 //     element: <Home></Home>,
-                // }, 
+                // },
             ],
         },
         {
@@ -41,31 +39,23 @@ function App() {
             children: [
                 {
                     path: "/details/sellPhone-details",
-                    element:<SellPhone></SellPhone>,
-                }, 
+                    element: <SellPhone></SellPhone>,
+                },
                 {
                     path: "/details/tourDe-details",
-                    element:<TourDe></TourDe>,
-                }, 
+                    element: <TourDe></TourDe>,
+                },
                 {
                     path: "/details/awesome-course-details",
-                    element:<AwesomeCourse></AwesomeCourse>,
-                }, 
+                    element: <AwesomeCourse></AwesomeCourse>,
+                },
             ],
         },
     ]);
 
-    const handleScroll = () => {
-      new ScrollCarousel(".my-carousel", {
-          autoplay: true,
-      });
-  };
-
     return (
-      
         <>
-            <div className=" lg:px-32 px-12  " onMouseMove={handleScroll}>
-
+            <div className=" lg:px-32 md:px-8 px-2 app">
                 <RouterProvider router={router} />
             </div>
         </>

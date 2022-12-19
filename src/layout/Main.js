@@ -7,10 +7,10 @@ import "./main.css";
 const Main = () => {
     return (
         <div className=" page-container ">
-            <div className="z-50 duration-300  sticky top-1">
+            <div className=" sticky top-1 z-50    duration-300 ">
                 <Navbar></Navbar>
             </div>
-            <div id="home" className=" pb-40 -z-10">
+            <div className=" pb-40">
                 <Outlet></Outlet>
             </div>
             <div className="footer mb-6">

@@ -30,4 +30,5 @@ module.exports = {
         ],
     },
     plugins: [require("daisyui")],
+    tailwindConfig: './styles/tailwind.config.js',
 };

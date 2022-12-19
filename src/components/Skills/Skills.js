@@ -8,13 +8,17 @@ import { FaReact } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaLinux } from "react-icons/fa";
 const Skills = () => {
     return (
-        <div id="skills" className="">
-            <h1 className="text-4xl text-center font-bold divider uppercase mt-20" data-aos="fade-down">
+        <div id="skills" className="pt-20">
+            <h1
+                className="divider text-center text-4xl font-bold uppercase"
+                data-aos="fade-down"
+            >
                 <span className=" -translate-y-4 ">My</span>{" "}
-                <span className="underline underline-offset-4 text-primary -translate-y-5">
+                <span className="-translate-y-5 text-primary underline underline-offset-4">
                     Skills
                 </span>
             </h1>
@@ -22,63 +26,83 @@ const Skills = () => {
                 id=""
                 data-aos="fade-down"
                 className=" my-carousel flex"
-                data-carousel='{"speed": 15, "autoplay": true, "smartSpeed": true, "slideSelector": ".my-slide"}'
+                data-carousel='{"speed": 15, "autoplay": true, "smartSpeed": true,}'
             >
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <FaHtml5 className="text-6xl"></FaHtml5>HTML
-                </div>
+                    <FaHtml5 className="text-2xl md:text-4xl xl:text-6xl"></FaHtml5>HTML
+                </div>{" "}
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <FaCss3Alt className="text-6xl"></FaCss3Alt>CSS
-                </div>
+                    <FaCss3Alt className="text-2xl md:text-4xl xl:text-6xl"></FaCss3Alt>
+                    CSS
+                </div>{" "}
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <TbBrandTailwind className="text-6xl"></TbBrandTailwind>
+                    <TbBrandTailwind className="text-2xl md:text-4xl xl:text-6xl"></TbBrandTailwind>
                     Tailwind
-                </div>
+                </div>{" "}
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <FaBootstrap className="text-6xl"></FaBootstrap>Bootstrap
+                    <FaBootstrap className=" text-2xl md:text-4xl xl:text-6xl "></FaBootstrap>
+                    Bootstrap
                 </div>
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <TbBrandJavascript className="text-6xl"></TbBrandJavascript>
-                    JS
+                    <TbBrandJavascript className="text-2xl md:text-4xl xl:text-6xl"></TbBrandJavascript>
+                    JavaScript
                 </div>
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <FaReact className="text-6xl"></FaReact>React.js
+                    <FaReact className="text-2xl md:text-4xl xl:text-6xl"></FaReact>
+                    ReactJS
                 </div>
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <SiFirebase className="text-6xl"></SiFirebase>Firebase
+                    <SiFirebase className="text-2xl md:text-4xl xl:text-6xl"></SiFirebase>
+                    Firebase
                 </div>
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 hover:text-primary/80 duration-200 ml-10 text-base hover:scale-105 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold normal-case text-slate-300  duration-200   hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary"
                 >
-                    <FaNodeJs className="text-6xl"></FaNodeJs>Node.js
-                </div>
+                    <FaNodeJs className="text-2xl md:text-4xl xl:text-6xl"></FaNodeJs>
+                    NodeJS
+                </div>{" "}
                 <div
-                    className="my-slide z-50 tooltip tooltip-accent bg-accent/20 backdrop-blur-sm  p-10 ml-10 text-base hover:scale-105 hover:text-primary/80 duration-200 cursor-default"
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold  normal-case   text-slate-300 duration-200 hover:text-primary/80 p-3 md:p-5 xl:p-10"
                     data-tip="primary "
                 >
-                    <FaGithub className="text-6xl"></FaGithub>GitHub
+                    <FaGithub className="text-2xl md:text-4xl xl:text-6xl"></FaGithub>
+                    GitHub
+                </div>{" "}
+                <div
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold  normal-case   text-slate-300 duration-200 hover:text-primary/80 p-3 md:p-5 xl:p-10"
+                    data-tip="primary "
+                >
+                    <TbBrandNextjs className="text-2xl md:text-4xl xl:text-6xl"></TbBrandNextjs>
+                    NextJS
+                </div>{" "}
+                <div
+                    className="my-slide tooltip tooltip-accent lg:ml-7 md:ml-5 btn z-50 grid h-full cursor-default justify-items-center border-none border-primary bg-accent/20  text-xs md:text-base font-semibold  normal-case   text-slate-300 duration-200 hover:text-primary/80 p-3 md:p-5 xl:p-10"
+                    data-tip="primary "
+                >
+                    <FaLinux className="text-2xl md:text-4xl xl:text-6xl"></FaLinux>
+                    Linux
                 </div>
             </div>
         </div>

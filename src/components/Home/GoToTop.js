@@ -27,12 +27,12 @@ const GoToTop = () => {
     }, []);
 
     return (
-        <div className="goto-top transition-all duration-300">
+        <div className="goto-top transition-all duration-300 z-50">
             {isVisible && (
                 <>
                     {" "}
                     <div className="top-btn peer">
-                        <div className="top-btn hover:bg-accent hover:backdrop-blur-sm hover:text-primary font-bold ">
+                        <div className="top-btn backdrop-blur-sm hover:text-primary font-bold ">
                             <IoIosArrowUp
                                 className="top-btn-icon text-4xl"
                                 onClick={goToBtn}

@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div
             id="home"
-            className=" mb-6 cursor-default  flex-col grid grid-cols-12 justify-between  justify-items-center items-center  min-h-screen"
+            className=" mt-6 cursor-default  flex-col grid grid-cols-12 justify-between  justify-items-center items-center  min-h-screen"
         >
             <div
                 className="col-span-12 w-5/6 md:col-span-6 "
@@ -49,11 +49,11 @@ const Hero = () => {
             </div>
 
             <div
-                className="col-span-12 md:col-span-6  bg-accent/10 w-full backdrop-blur-sm rounded-md px-10 py-20"
+                className="col-span-12 md:col-span-6  bg-accent/0 w-full  rounded-md px-2 lg:px-10 lg:py-20"
                 data-aos="fade-left"
             >
-                <h1 className="text-5xl  font-bold mb-4">Hello!</h1>
-                <h1 className="text-5xl  font-bold uppercase">
+                <h1 className="xl:text-5xl text-4xl font-bold mb-4">Hello!</h1>
+                <h1 className="md:text-3xl text-2xl font-bold uppercase">
                     I'm{" "}
                     <span className="text-primary">
                         <Typewriter
@@ -67,9 +67,9 @@ const Hero = () => {
                         />
                     </span>
                 </h1>
-                <h1 className=" text-2xl font-bold uppercase delay-1000">
+                <h1 className="md:text-xl text-base mb-4 font-bold uppercase delay-1000">
                     <Typewriter
-                        words={[`A Front End DEVELOPER`]}
+                        words={[`A Front End web DEVELOPER`]}
                         loop={9999}
                         cursor
                         cursorStyle="_"
@@ -78,18 +78,21 @@ const Hero = () => {
                         // delaySpeed={1000}
                     />
                 </h1>
+                <p>My full name is Md. Mehedi Hasan. I live in Dhaka, Bangladesh. I'm a student of computer science at the University of Daffodil.</p>
 
+                <div className="mt-10   lg:mt-32" data-aos='fade-up' data-aos-duration="1000">
                 <Link
                     to={{
                         pathname:
                             "//drive.google.com/file/d/1LxZVZ0Ti_icfpQ2FV39kOHWX0x_P9U8v/view",
                     }}
                     target="_blank"
-                    className="btn btn-primary mt-32 text-primary normal-case rounded-sm bg-accent/50 items-center border-none font-black hover:text-white hover:scale-105"
+                    className="btn btn-primary flex md:w-8/12 xl:w-2/5  text-primary normal-case rounded-sm bg-accent/50 items-center border-none font-black hover:text-white hover:scale-105"
                 >
                     <FaDownload></FaDownload>{" "}
                     <span className="ml-2">Download Resume</span>
                 </Link>
+                </div>
             </div>
         </div>
     );

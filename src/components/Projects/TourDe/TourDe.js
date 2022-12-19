@@ -14,7 +14,7 @@ const TourDe = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
                     <div
                         className="lg:col-span-1 w-full"
-                        data-aos="fade-down-right"
+                        data-aos="fade-down"
                     >
                         <Carousel autoPlay={true} infiniteLoop={true}>
                             <div>
@@ -31,13 +31,13 @@ const TourDe = () => {
 
                     <div
                         className="lg:col-span-1 w-full"
-                        data-aos="fade-down-left"
+                        data-aos="fade-up"
                     >
                         <div className="flex items-center justify-between">
                             <h1 className="text-3xl font-bold text-primary/90">
                                 tourDe
                             </h1>
-                            <p className="text-white text-sm">
+                            <p className="text-white md:text-sm text-xs">
                                 (Nov 08 - Nov -10)/2022
                             </p>
                         </div>

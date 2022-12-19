@@ -14,7 +14,7 @@ const AwesomeCourse = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
                     <div
                         className="lg:col-span-1 w-full"
-                        data-aos="fade-down-right"
+                        data-aos="fade-down"
                     >
                         <Carousel autoPlay={true} infiniteLoop={true}>
                             <div>
@@ -31,13 +31,13 @@ const AwesomeCourse = () => {
 
                     <div
                         className="lg:col-span-1 w-full"
-                        data-aos="fade-down-left"
+                        data-aos="fade-up"
                     >
                         <div className="flex items-center justify-between">
                             <h1 className="text-3xl font-bold text-primary/90">
                                 Awesome Course
                             </h1>
-                            <p className="text-white text-sm">
+                            <p className="text-white md:text-sm text-xs">
                                 (Oct 25 - Oct -27)/2022
                             </p>
                         </div>

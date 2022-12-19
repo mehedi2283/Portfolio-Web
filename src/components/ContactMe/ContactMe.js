@@ -5,12 +5,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactMe = () => {
-   
-
-
-
-
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -46,78 +40,80 @@ const ContactMe = () => {
     };
 
     return (
-        <div id="contacts" className="mt-20">
+        <div id="contacts" className="pt-20 ">
             <h1
-                className="text-4xl text-center font-bold divider  uppercase cursor-default"
+                className="divider cursor-default text-center text-3xl font-bold  uppercase sm:text-4xl"
                 data-aos="fade-down"
             >
                 <span className=" -translate-y-4 ">Contact</span>{" "}
-                <span className="underline underline-offset-4 text-primary -translate-y-5">
+                <span className="-translate-y-5 text-primary underline underline-offset-4">
                     Me
                 </span>
             </h1>
             <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="flex flex-col w-1/2 mx-auto"
+                className="mx-auto flex w-full flex-col xl:w-2/3"
             >
-                <div className="flex flex-col relative mt-9" data-aos="fade-down">
-                    
+                <div
+                    className="relative mt-9 flex flex-col"
+                    data-aos="fade-down"
+                >
                     <input
-                       
                         type="text"
                         name="from_name"
                         required
-                        autocomplete="off"
-                        className="input  peer bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 h-14"
+                        className="peer  input mt-1 h-14 border border-primary/30 bg-accent/20 text-primary focus:border-primary/70 focus:outline-none focus:backdrop-blur-sm"
                     />
                     <label
-                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50
-                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12    transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold `}
+                        className={`absolute -top-7
+                        z-10 mt-4 w-24 translate-x-5 rounded-lg border border-primary/30 bg-accent/40 text-center    text-lg font-bold text-primary  backdrop-blur-sm transition-all peer-hover:bg-primary/50 peer-hover:text-slate-300 peer-hover:shadow-lg peer-hover:shadow-primary/70  peer-focus:-top-12 peer-focus:bg-primary/50 peer-focus:text-slate-300 peer-focus:shadow-lg peer-focus:shadow-primary/70 `}
                     >
                         Name
                     </label>
                 </div>
-                <div className="flex flex-col relative mt-9" data-aos="fade-down">
-                    
+                <div
+                    className="relative mt-9 flex flex-col"
+                    data-aos="fade-down"
+                >
                     <input
-                       
                         type="email"
                         name="from_email"
                         required
-                        autocomplete="off"
-                        className="input peer bg-accent/20 text-primary backdrop-blur-sm mt-1 border border-primary/30 focus:outline-none focus:border-primary/70 p-5 h-14"
+                        className="peer input mt-1 h-14 border border-primary/30 bg-accent/20 p-5 text-primary focus:border-primary/70 focus:outline-none focus:backdrop-blur-sm"
                     />
                     <label
-                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50 
-                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12 transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold `}
+                        className={`absolute -top-7 
+                        z-10 mt-4 w-24 translate-x-5 rounded-lg border border-primary/30 bg-accent/40 text-center text-lg font-bold text-primary  backdrop-blur-sm transition-all peer-hover:bg-primary/50 peer-hover:text-slate-300 peer-hover:shadow-lg peer-hover:shadow-primary/70  peer-focus:-top-12 peer-focus:bg-primary/50 peer-focus:text-slate-300 peer-focus:shadow-lg peer-focus:shadow-primary/70 `}
                     >
                         Email
                     </label>
                 </div>
-                <div className="flex flex-col relative mt-9 transition-all duration-200" data-aos="fade-down">
-                    
-                    <textarea
-                       
-                        name="message"
-                        required
-                        autocomplete="off"
-                        className="textarea peer bg-accent/20 backdrop-blur-sm h-52 mt-1 border border-primary/30 p-5 text-primary focus:outline-none focus:border-primary/70"
-                    />
-                    <label
-                        className={`peer-focus:bg-primary/50 peer-hover:bg-primary/50 
-                        peer-hover:text-slate-300 peer-focus:text-slate-300 peer-hover:shadow-primary/70 peer-hover:shadow-lg peer-focus:shadow-lg peer-focus:shadow-primary/70 absolute -top-7 peer-focus:-top-12    transition-all mt-4 text-lg  bg-accent/40 backdrop-blur-sm text-primary border-primary/30 border w-24  text-center rounded-lg translate-x-5 z-10 font-bold duration-200`}
-                    >
-                        Message
-                    </label>
+                <div data-aos="fade-down">
+                    <div className="relative mt-9 flex flex-col transition-all duration-200">
+                        <textarea
+                            name="message"
+                            required
+                            className="peer textarea mt-1 h-52 border border-primary/30 bg-accent/20 p-5 text-primary focus:border-primary/70  focus:outline-none focus:backdrop-blur-sm"
+                        />
+                        <label
+                            className="absolute -top-7 
+                        z-10 mt-4 w-24 translate-x-5 rounded-lg border border-primary/30 bg-accent/40 text-center    text-lg font-bold text-primary  backdrop-blur-sm transition-all duration-200 peer-hover:bg-primary/50 peer-hover:text-slate-300 peer-hover:shadow-lg  peer-hover:shadow-primary/70 peer-focus:-top-12 peer-focus:bg-primary/50 peer-focus:text-slate-300 peer-focus:shadow-lg peer-focus:shadow-primary/70"
+                        >
+                            Message
+                        </label>
+                    </div>
                 </div>
-                <input
-                    data-aos="fade-down"
-                    type="submit"
-                    value="Send"
-                    className="btn
-                btn-primary mt-4  text-primary font-bold hover:text-slate-300 border-primary/40 duration-500 w-11/12 mx-auto backdrop-blur-sm bg-accent/30 border"
-                />
+
+                <div data-aos="fade-down" className="w-11/12 mx-auto">
+                    <input
+                        type="submit"
+                        value="Send"
+                        className="btn-primary
+                btn mx-auto  mt-4 w-full border border-primary/40 bg-accent/30 font-bold text-primary backdrop-blur-sm duration-500 hover:text-slate-300"
+                    />
+                </div>
+
                 <ToastContainer
                     position="top-right"
                     autoClose={5000}
