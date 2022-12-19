@@ -7,7 +7,6 @@ import SellPhone from "./components/Projects/SellPhone/SellPhone";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TourDe from "./components/Projects/TourDe/TourDe";
 import AwesomeCourse from "./components/Projects/AwesomeCourse/AwesomeCourse";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
