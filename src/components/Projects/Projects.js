@@ -62,7 +62,7 @@ const Projects = () => {
                             >
                                 Live
                             </NavLink>
-                            <NavLink to='/details/awesome-course-details' className="rounded-sm btn btn-sm btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
+                            <NavLink to='/awesome-course-details' className="rounded-sm btn btn-sm btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
                                 Details
                             </NavLink>
                         </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                             >
                                 Live
                             </NavLink>
-                            <NavLink to='/details/sellPhone-details' className="rounded-sm btn-sm btn btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
+                            <NavLink to='/sellPhone-details' className="rounded-sm btn-sm btn btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
                                 Details
                             </NavLink>
                         </div>
@@ -129,7 +129,7 @@ const Projects = () => {
                             >
                                 Live
                             </NavLink>
-                            <NavLink to='/details/tourDe-details' className="rounded-sm btn btn-sm btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
+                            <NavLink to='/tourDe-details' className="rounded-sm btn btn-sm btn-primary  text-primary hover:text-white hover:scale-105 bg-accent/50 border-none font-black">
                                 Details
                             </NavLink>
                         </div>
