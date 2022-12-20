@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import DetailsNavbar from "../components/Navbar/DetailsNavbar";
-import Navbar from "../components/Navbar/Navbar";
+// import Navbar from "../components/Navbar/Navbar";
 import Footer from "./../components/Footer/Footer";
 import ScrollToTop from './../assets/ScrollToTop';
 import "./main.css";
