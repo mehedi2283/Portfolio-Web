@@ -30,15 +30,15 @@ function App() {
                     element: <DetailsLayout></DetailsLayout>,
                     children: [
                         {
-                            path: "/sellPhone-details",
+                            path: "/details/sellPhone-details",
                             element: <SellPhone></SellPhone>,
                         },
                         {
-                            path: "/tourDe-details",
+                            path: "/details/tourDe-details",
                             element: <TourDe></TourDe>,
                         },
                         {
-                            path: "/awesome-course-details",
+                            path: "/details/awesome-course-details",
                             element: <AwesomeCourse></AwesomeCourse>,
                         },
                     ],
