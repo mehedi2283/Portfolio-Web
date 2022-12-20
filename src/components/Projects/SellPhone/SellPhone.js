@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from "../../.././assets/sellphone/FireShot Capture 012 - Home - SellPhone - localhost.png";
@@ -8,6 +8,15 @@ import { TiTick } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 const SellPhone = () => {
+    // const [loading,setLoading] = useState(false);
+
+    //  if(loading) {
+    //     return (
+    //         <div>
+    //             loading...
+    //         </div>
+    //     )
+    //  }
     return (
         <section className="cursor-default">
             <div className="container">
