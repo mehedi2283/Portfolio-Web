@@ -8,15 +8,15 @@ import { TiTick } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 const SellPhone = () => {
-    // const [loading,setLoading] = useState(false);
+    const [loading] = useState(false);
 
-    //  if(loading) {
-    //     return (
-    //         <div>
-    //             loading...
-    //         </div>
-    //     )
-    //  }
+     if(loading) {
+        return (
+            <div>
+                loading...
+            </div>
+        )
+     }
     return (
         <section className="cursor-default">
             <div className="container">
