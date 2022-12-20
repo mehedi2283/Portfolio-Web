@@ -33,7 +33,7 @@ function App() {
             ],
         },
         {
-            path: "/details",
+            path: "/",
             element: <DetailsLayout></DetailsLayout>,
             children: [
                 {
