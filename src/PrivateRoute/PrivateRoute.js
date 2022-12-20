@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 const PrivateRoutes = ({ children }) => {
-    const [loading] = useState(true);
+    const [isLoading] = useState(false);
     
-    if (loading&&!children.length) {
+    if (isLoading) {
         return (
             <div className="border my-72 border-primary shadow rounded-md p-4 max-w-sm w-full mx-auto">
                 <div className="animate-pulse flex space-x-4">

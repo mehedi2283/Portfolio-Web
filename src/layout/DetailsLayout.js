@@ -13,9 +13,9 @@ const DetailsLayout = () => {
         <>
             <ScrollToTop></ScrollToTop>
             <div className=" page-container">
-                <div  className="z-50 duration-300  sticky top-1">
+                {/* <div  className="z-50 duration-300  sticky top-1">
                     <Navbar></Navbar>
-                </div>
+                </div> */}
                 <div  className="z-40 duration-300  sticky top-[70px] mb-20">
                     <DetailsNavbar></DetailsNavbar>
                 </div>
