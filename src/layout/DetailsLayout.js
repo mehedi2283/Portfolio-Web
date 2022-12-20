@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import DetailsNavbar from "../components/Navbar/DetailsNavbar";
 // import Navbar from "../components/Navbar/Navbar";
-import Footer from "./../components/Footer/Footer";
+// import Footer from "./../components/Footer/Footer";
 import ScrollToTop from './../assets/ScrollToTop';
 import "./main.css";
 
@@ -22,9 +22,9 @@ const DetailsLayout = () => {
                 <div  className=" pb-60 -z-10">
                     <Outlet></Outlet>
                 </div>
-                <div className="footer mb-6">
+                {/* <div className="footer mb-6">
                     <Footer></Footer>
-                </div>
+                </div> */}
             </div>
         </>
     );
