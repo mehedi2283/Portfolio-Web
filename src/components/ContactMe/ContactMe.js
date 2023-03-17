@@ -105,7 +105,7 @@ const ContactMe = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-down" className="w-11/12 mx-auto">
+                <div data-aos="fade-down" className="mx-auto w-11/12">
                     <input
                         type="submit"
                         value="Send"

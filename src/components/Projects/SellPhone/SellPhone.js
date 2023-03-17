@@ -20,11 +20,8 @@ const SellPhone = () => {
     return (
         <section className="cursor-default">
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
-                    <div
-                        className="lg:col-span-1 w-full"
-                        data-aos="fade-down"
-                    >
+                <div className="mb-5 grid grid-cols-1 gap-10 lg:grid-cols-2">
+                    <div className="w-full lg:col-span-1" data-aos="fade-down">
                         <Carousel autoPlay={true} infiniteLoop={true}>
                             <div>
                                 <img src={img1} alt=" " />
@@ -38,19 +35,16 @@ const SellPhone = () => {
                         </Carousel>
                     </div>
 
-                    <div
-                        className="lg:col-span-1 w-full"
-                        data-aos="fade-up"
-                    >
-                        <div className="flex items-center justify-between cursor-default">
+                    <div className="w-full lg:col-span-1" data-aos="fade-up">
+                        <div className="flex cursor-default items-center justify-between">
                             <h1 className="text-3xl font-bold text-primary/90">
                                 SellPhone
                             </h1>
-                            <p className="text-white md:text-sm text-xs">
+                            <p className="text-xs text-white md:text-sm">
                                 (Nov 24 - Nov -28)/2022
                             </p>
                         </div>
-                        <p className="text-white my-3 cursor-default">
+                        <p className="my-3 cursor-default text-white">
                             SellPhone is an online resale store where you can
                             buy products from online and also can sell them.
                         </p>
@@ -59,7 +53,7 @@ const SellPhone = () => {
                                 to={{
                                     pathname: "//sellphone-69598.web.app/",
                                 }}
-                                className="text-primary font-bold normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
+                                className="btn-primary btn-sm btn rounded border-none bg-accent/50  py-2 px-5 font-bold normal-case text-primary hover:scale-105  hover:text-white "
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -70,7 +64,7 @@ const SellPhone = () => {
                                     pathname:
                                         "//github.com/mehedi2283/sellphone-client",
                                 }}
-                                className="text-primary font-bold normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
+                                className="btn-primary btn-sm btn rounded border-none bg-accent/50  py-2 px-5 font-bold normal-case text-primary hover:scale-105  hover:text-white "
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -81,67 +75,67 @@ const SellPhone = () => {
                                     pathname:
                                         "//github.com/mehedi2283/sellphone-server",
                                 }}
-                                className="text-primary font-bold normal-case hover:text-white btn btn-primary  bg-accent/50 border-none btn-sm hover:scale-105 py-2 rounded  px-5 "
+                                className="btn-primary btn-sm btn rounded border-none bg-accent/50  py-2 px-5 font-bold normal-case text-primary hover:scale-105  hover:text-white "
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 Server GitHub
                             </Link>
                         </div>
-                        <h2 className="text-white font-bold  uppercase cursor-default">
+                        <h2 className="cursor-default font-bold  uppercase text-white">
                             📑Features
                         </h2>
-                        <ul className="text-white my-3 flex flex-col gap-3 cursor-default">
+                        <ul className="my-3 flex cursor-default flex-col gap-3 text-white">
                             <li className="flex items-center">
-                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <TiTick className="text-2xl text-primary"></TiTick>{" "}
                                 <span>Single pase web app.</span>
                             </li>
                             <li className="flex items-center">
-                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <TiTick className="text-2xl text-primary"></TiTick>{" "}
                                 <span>Admin Dashboard.</span>
                             </li>
                             <li className="flex items-center">
-                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <TiTick className="text-2xl text-primary"></TiTick>{" "}
                                 <span>CRUD Operation</span>
                             </li>
                             <li className="flex items-center">
-                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <TiTick className="text-2xl text-primary"></TiTick>{" "}
                                 <span>Search and Filter functionality</span>
                             </li>
                             <li className="flex items-center">
-                                <TiTick className="text-primary text-2xl"></TiTick>{" "}
+                                <TiTick className="text-2xl text-primary"></TiTick>{" "}
                                 <span>NodeJS authentication with JWT</span>
                             </li>
                         </ul>
-                        <h2 className="text-primary/90 font-bold  uppercase cursor-default">
+                        <h2 className="cursor-default font-bold  uppercase text-primary/90">
                             🚀 Technology
                         </h2>
-                        <div className="flex items-center flex-wrap gap-3 my-3 ">
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                        <div className="my-3 flex flex-wrap items-center gap-3 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 React.js
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 React Router Dom
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 Tailwind CSS
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 Node.js
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 Express.js
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 Mongo DB
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 JSON Web Token
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 Firebase
                             </p>
-                            <p className="text-slate-300 bg-accent/50 py-2 rounded shadow  text-sm px-5 ">
+                            <p className="rounded bg-accent/50 py-2 px-5 text-sm  text-slate-300 shadow ">
                                 React Hot Toast
                             </p>
                         </div>

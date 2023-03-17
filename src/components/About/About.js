@@ -9,14 +9,14 @@ const About = () => (
     <div
         data-aos="fade-down"
         id="about"
-        className="   cursor-default mx-auto pt-20 p-4"
+        className="   mx-auto cursor-default p-4 pt-20"
     >
         <h1
-            className="text-4xl text-center font-bold divider  uppercase "
+            className="divider text-center text-4xl font-bold  uppercase "
             data-aos="fade-down"
         >
             <span className=" -translate-y-4 ">About</span>{" "}
-            <span className="underline underline-offset-4 text-primary -translate-y-5">
+            <span className="-translate-y-5 text-primary underline underline-offset-4">
                 Me
             </span>
         </h1>
@@ -29,7 +29,7 @@ const About = () => (
             I'm a dependable person and hardworking. I'm honest, flexible and
             reliable. Here some of my information.
         </p>
-        <div className="flex flex-col w-full md:flex-row mt-9 ">
+        <div className="mt-9 flex w-full flex-col md:flex-row ">
             {/* <section className="md:col-span-5 col-span-11 grid justify-items-center lg:text-sm " >
                 {" "}
                 <h1
@@ -66,7 +66,7 @@ const About = () => (
                             </span>
                         </p>
                     </div>
-                    <div data-aos="sm:fade-down-left " className="flex flex-col justify-center items-center">
+                    <div data-aos-"sm:fade-down-left " className="flex flex-col justify-center items-center">
                         <p>
                             Nationality:{" "}
                             <span className="font-bold">Bangladeshi</span>
@@ -112,17 +112,23 @@ const About = () => (
                     </div>
                 </div>
             </section> */}
-            <section className=" justify-items-center w-full mx-auto lg:text-sm">
+            <section className=" mx-auto w-full justify-items-center lg:text-sm">
                 <h1
-                    className="text-center text-3xl font-bold uppercase mb-10"
+                    className="mb-10 text-center text-3xl font-bold uppercase"
                     data-aos="fade-down"
                 >
                     {" "}
                     Personal Information
                 </h1>
-                <div className="grid xl:grid-cols-2 text-center bg-accent/20 xl:py-20 py-10 rounded gap-1" data-aos="fade-down">
-                    <div className="" >
-                        <section data-aos="fade-down" className=" grid items-center">
+                <div
+                    className="grid gap-1 rounded bg-accent/20 py-10 text-center xl:grid-cols-2 xl:py-20"
+                    data-aos="fade-down"
+                >
+                    <div className="">
+                        <section
+                            data-aos="fade-down"
+                            className=" grid items-center"
+                        >
                             <p>
                                 First Name:{" "}
                                 <span className="font-bold">Mehedi Hasan</span>
@@ -149,7 +155,10 @@ const About = () => (
                         </section>
                     </div>
                     <div className=" ">
-                        <section data-aos="fade-down" className="grid justify-items-center">
+                        <section
+                            data-aos="fade-down"
+                            className="grid justify-items-center"
+                        >
                             <p>
                                 Nationality:{" "}
                                 <span className="font-bold">Bangladeshi</span>
@@ -160,7 +169,7 @@ const About = () => (
                             </p>
                             <p className="">
                                 Email:{" "}
-                                <span className="font-bold text-ellipsis ">
+                                <span className="text-ellipsis font-bold ">
                                     mehedihasann.babu@gmail.com
                                 </span>
                             </p>
@@ -175,7 +184,7 @@ const About = () => (
                                 >
                                     <p className="flex items-center">
                                         LinkedIn:{" "}
-                                        <span className="font-bold ml-1">
+                                        <span className="ml-1 font-bold">
                                             Mehedi
                                         </span>
                                     </p>
@@ -191,7 +200,7 @@ const About = () => (
                                 >
                                     <p className="flex items-center">
                                         GitHub:{" "}
-                                        <span className="font-bold ml-1">
+                                        <span className="ml-1 font-bold">
                                             Mehedi
                                         </span>
                                     </p>
@@ -202,59 +211,57 @@ const About = () => (
                 </div>
             </section>
 
-            <section className="divider md:divider-horizontal text-center  w-full">
-               
-            </section>
+            <section className="divider w-full text-center  md:divider-horizontal"></section>
 
-            <section className="justify-items-center w-full mx-auto ">
+            <section className="mx-auto w-full justify-items-center ">
                 <h1
-                    className="text-center text-3xl font-bold uppercase mb-3"
+                    className="mb-3 text-center text-3xl font-bold uppercase"
                     data-aos="fade-down"
                 >
                     {" "}
                     I can do
                 </h1>
-                <div className="grid grid-cols-2 text-center md:gap-5 gap-2">
-                    <div className="hover:scale-105  duration-200 ">
+                <div className="grid grid-cols-2 gap-2 text-center md:gap-5">
+                    <div className="duration-200  hover:scale-105 ">
                         <section
                             data-aos="fade-down-left"
-                            className="bg-accent/20 p-4 rounded-lg hover:text-primary/80     py-10"
+                            className="rounded-lg bg-accent/20 p-4 py-10     hover:text-primary/80"
                         >
-                            <VscServerProcess className="sm:text-6xl text-3xl mx-auto"></VscServerProcess>
-                            <p className="md:text-base text-xs">
+                            <VscServerProcess className="mx-auto text-3xl sm:text-6xl"></VscServerProcess>
+                            <p className="text-xs md:text-base">
                                 Back-End Developement
                             </p>
                         </section>
                     </div>
-                    <div className="hover:scale-105 duration-200 ">
+                    <div className="duration-200 hover:scale-105 ">
                         <section
                             data-aos="fade-down-right"
-                            className="bg-accent/20 p-4 rounded-lg hover:text-primary/80     py-10"
+                            className="rounded-lg bg-accent/20 p-4 py-10     hover:text-primary/80"
                         >
-                            <BsCreditCard2Front className="sm:text-6xl text-3xl mx-auto"></BsCreditCard2Front>
-                            <p className="md:text-base text-xs">
+                            <BsCreditCard2Front className="mx-auto text-3xl sm:text-6xl"></BsCreditCard2Front>
+                            <p className="text-xs md:text-base">
                                 Front-End Developement
                             </p>
                         </section>
                     </div>
-                    <div className="hover:scale-105 duration-200 ">
+                    <div className="duration-200 hover:scale-105 ">
                         <section
                             data-aos="fade-down-left"
-                            className="bg-accent/20 p-4 rounded-lg hover:text-primary/80     py-10"
+                            className="rounded-lg bg-accent/20 p-4 py-10     hover:text-primary/80"
                         >
-                            <BsFullscreen className="sm:text-6xl text-3xl mx-auto"></BsFullscreen>
-                            <p className="md:text-base text-xs">
+                            <BsFullscreen className="mx-auto text-3xl sm:text-6xl"></BsFullscreen>
+                            <p className="text-xs md:text-base">
                                 Fullstack Developement
                             </p>
                         </section>
                     </div>
-                    <div className="hover:scale-105 duration-200 ">
+                    <div className="duration-200 hover:scale-105 ">
                         <section
                             data-aos="fade-down-right"
-                            className="bg-accent/20 p-4 rounded-lg hover:text-primary/80     py-10"
+                            className="rounded-lg bg-accent/20 p-4 py-10     hover:text-primary/80"
                         >
-                            <MdOutlineDevices className="sm:text-6xl text-3xl mx-auto"></MdOutlineDevices>
-                            <p className="md:text-base text-xs">
+                            <MdOutlineDevices className="mx-auto text-3xl sm:text-6xl"></MdOutlineDevices>
+                            <p className="text-xs md:text-base">
                                 Full-Responsive Design
                             </p>
                         </section>

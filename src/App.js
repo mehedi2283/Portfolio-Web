@@ -4,18 +4,20 @@ import Main from "./layout/Main";
 import Home from "./components/Home/Home";
 import DetailsLayout from "./layout/DetailsLayout";
 import SellPhone from "./components/Projects/SellPhone/SellPhone";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+// import "aos/dist/aos.css"; // You can also use <link> for styles
 import TourDe from "./components/Projects/TourDe/TourDe";
 import AwesomeCourse from "./components/Projects/AwesomeCourse/AwesomeCourse";
-import "aos/dist/aos.css";
+// import { useEffect } from "react";
+// import "aos/dist/aos.css";
 
 function App() {
    
 
     // useEffect(() => {
-    //     AOS.init()
-    //     AOS.refresh();
-    //     AOS.refreshHard();
+        // AOS.init()
+        // AOS.refresh();
+        // AOS.refreshHard();
+        // window.location.reload();
     // },[])
     const router = createBrowserRouter([
         {

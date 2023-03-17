@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div
             id="home"
-            className=" mt-6 cursor-default  flex-col grid grid-cols-12 justify-between  justify-items-center items-center  min-h-screen"
+            className=" mt-6 grid  min-h-screen cursor-default grid-cols-12 flex-col  items-center justify-between  justify-items-center"
         >
             <div
                 className="col-span-12 w-5/6 md:col-span-6 "
@@ -23,7 +23,7 @@ const Hero = () => {
                         className="w-full rounded-lg shadow-2xl backdrop-blur-sm bg-accent/10"
                     /> */}
 
-                <div className="order-1 lg:order-2 grid grid-cols-3  lg:px-5 lg:mb-0  ">
+                <div className="order-1 grid grid-cols-3 lg:order-2  lg:mb-0 lg:px-5  ">
                     <div className="col-span-1 translate-y-10 -skew-y-12 animate-pulse">
                         <img
                             src={hero1}
@@ -49,11 +49,11 @@ const Hero = () => {
             </div>
 
             <div
-                className="col-span-12 md:col-span-6  bg-accent/0 w-full  rounded-md px-2 lg:px-10 lg:py-20"
+                className="col-span-12 w-full  rounded-md bg-accent/0  px-2 md:col-span-6 lg:px-10 lg:py-20"
                 data-aos="fade-left"
             >
-                <h1 className="xl:text-5xl text-4xl font-bold mb-4">Hello!</h1>
-                <h1 className="md:text-3xl text-2xl font-bold uppercase">
+                <h1 className="mb-4 text-4xl font-bold xl:text-5xl">Hello!</h1>
+                <h1 className="text-2xl font-bold uppercase md:text-3xl">
                     I'm{" "}
                     <span className="text-primary">
                         <Typewriter
@@ -67,7 +67,7 @@ const Hero = () => {
                         />
                     </span>
                 </h1>
-                <h1 className="md:text-xl text-base mb-4 font-bold uppercase delay-1000">
+                <h1 className="mb-4 text-base font-bold uppercase delay-1000 md:text-xl">
                     <Typewriter
                         words={[`A Front End web DEVELOPER`]}
                         loop={9999}
@@ -78,20 +78,28 @@ const Hero = () => {
                         // delaySpeed={1000}
                     />
                 </h1>
-                <p>My full name is Md. Mehedi Hasan. I live in Dhaka, Bangladesh. I'm a student of computer science at the University of Daffodil.</p>
+                <p>
+                    My full name is Md. Mehedi Hasan. I live in Dhaka,
+                    Bangladesh. I'm a student of computer science at the
+                    University of Daffodil.
+                </p>
 
-                <div className="mt-10   lg:mt-32" data-aos='fade-up' data-aos-duration="1000">
-                <Link
-                    to={{
-                        pathname:
-                            "//drive.google.com/file/d/1LxZVZ0Ti_icfpQ2FV39kOHWX0x_P9U8v/view",
-                    }}
-                    target="_blank"
-                    className="btn btn-primary flex md:w-8/12 xl:w-2/5  text-primary normal-case rounded-sm bg-accent/50 items-center border-none font-black hover:text-white hover:scale-105"
+                <div
+                    className="mt-10   lg:mt-32"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
                 >
-                    <FaDownload></FaDownload>{" "}
-                    <span className="ml-2">Download Resume</span>
-                </Link>
+                    <Link
+                        to={{
+                            pathname:
+                                "//drive.google.com/file/d/1LxZVZ0Ti_icfpQ2FV39kOHWX0x_P9U8v/view",
+                        }}
+                        target="_blank"
+                        className="btn-primary btn flex items-center rounded-sm  border-none bg-accent/50 font-black normal-case text-primary hover:scale-105 hover:text-white md:w-8/12 xl:w-2/5"
+                    >
+                        <FaDownload></FaDownload>{" "}
+                        <span className="ml-2">Download Resume</span>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -2,21 +2,29 @@ import React from "react";
 
 const Blogs = () => {
     return (
-        <section id="blogs" className=" pt-20 mb-72 cursor-default">
-            <h1 className="text-4xl text-center font-bold divider  uppercase mb-20 " data-aos="fade-down">
+        <section id="blogs" className=" mb-72 cursor-default pt-20">
+            <h1
+                className="divider mb-20 text-center text-4xl  font-bold uppercase "
+                data-aos="fade-down"
+            >
                 <span className=" -translate-y-4 ">my</span>{" "}
-                <span className="underline underline-offset-4 text-primary -translate-y-5">
+                <span className="-translate-y-5 text-primary underline underline-offset-4">
                     blogs
                 </span>
             </h1>
-            <div className=" flex justify-center mt-20" data-aos="fade-down ">
-                <h1 className="text-center font-bold sm:text-3xl text-xl uppercase text-white flex items-center justify-center">
-                    Comming 
-                    <span className="h-6 w-6 mx-1 items-center justify-end ml-4 flex"> s</span>
-                    <span className="h-6 w-6 mx-1 animate-spin rounded-full border-4 border-dashed border-red-600 block"></span>
-                    <span className="h-6 w-6 mx-1 animate-spin rounded-full border-4 border-dashed border-red-600 block"></span>
-                    <span className="h-6 w-6 mx-1 items-center flex"> n...</span>
-                   
+            <div className=" mt-20 flex justify-center" data-aos="fade-down ">
+                <h1 className="flex items-center justify-center text-center text-xl font-bold uppercase text-white sm:text-3xl">
+                    Comming
+                    <span className="mx-1 ml-4 flex h-6 w-6 items-center justify-end">
+                        {" "}
+                        s
+                    </span>
+                    <span className="mx-1 block h-6 w-6 animate-spin rounded-full border-4 border-dashed border-red-600"></span>
+                    <span className="mx-1 block h-6 w-6 animate-spin rounded-full border-4 border-dashed border-red-600"></span>
+                    <span className="mx-1 flex h-6 w-6 items-center">
+                        {" "}
+                        n...
+                    </span>
                 </h1>
             </div>
         </section>
